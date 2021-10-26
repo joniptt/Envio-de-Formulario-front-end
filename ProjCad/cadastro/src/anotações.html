@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* == Comentario em CSS */ 
+    </style>
+</head>
+<body>
+    
+    <Definição de API>
+
+    
+    É uma relação entre:
+
+    Cliente (Client)
+    Garçom (Pedidos, levar seus pedidos para a cozinha e trazer) (API)
+    Cozinha (Server)
+
+    Significado de API, Application Programming Interface (Interface de programação de aplicação) é basicamente um conjunto de rotinas e padrões
+    estabelecidos por uma aplicação, para que outras aplicações possam utilizar as 
+    funcionalidades desta aplicação.
+     
+    -Responsável por estabelecer comunicação entre diferentes serviços.
+    -Meio de campo entre as tecnologias.
+    -Intermediador para troca de informações.
+
+    A transferencia de dados executada pelo API é feita atravez do protocólo HTTP.
+
+    
+    <Definição de REST>
+
+    Obrigações e regras a serem seguidas na transferencia de dados feita pela API.
+
+    Significado de REST, Representational State Transfer(Transferencia de Estado Representativo) ou seja será feita a transferencia de dados
+    de uma maneira simbólica, figurativa, representativa, de maneira didática.
+
+    Resources seria uma entidade, um objeto.
+
+    <6 NECESSIDADES (CONSTRAITS) PARA SER RESTFUL>
+
+        - _Client-Server_: Separação do cliente e do armazenamento de dados(servidor), dessa forma, é possível ter
+        uma maior portabilidade para o nosso sistema, usando o React para WEB e o React Native para smartphones, por exemplo.
+
+        - _Stateless_: Cada requisição que o cliente fizer para o servidor, deverá conter todas as informações necessárias para
+        o servidor entender e responder (RESPONSE) a requisição (REQUEST). Exemplo: A sessão do usuário deverá ser enviada em todas
+        as requisições, para saber se aquele usuário está autenticado e apto para usar os serviços, e o servidor não pode lembrar 
+        que o cliente foi autenticado na sessão anterior. O padrão é usar tokens para comunicação.
+
+        - _Cacheable_: As respostas para uma requisição , deverão ser explicitas ao dizer se aquela requisão , pode ou não ser
+        cacheada pelo cliente.
+
+        - _Layered System_: O cliente acessa um endpoint, sem precisar saber da complexidade, de quais passos estão sendo 
+        necessários para o servidor responder a requisição, ou quais outras camadas o servidor estará lidando para que a 
+        requisição seja respondida.
+
+        - _Code on Demand (optional): Da possibilidade da nossa aplicação pegar códigos como o JavaScript e executar no servidor.
+
+    <OQUE É RESTFUL?>
+        
+        - Restful, é a aplicação dos padrões REST
+
+
+    <BOAS PRÁTICAS>
+        
+        - Utilizar os verbos http para nossas requisições.
+        - Não utilizar barras no final do ENDPOINT.
+        - Utilizar os endpoints no plural ou no singular não importa, siga um padrão.
+        - Nunca deixe o cliente sem resposta!
+        - Utilizar o underline( _ ) para declarar uma parametro que não vai ser utilizado.
+
+    
+    <VERBOS HTTP>
+
+        // GET: Receber dados de um Resource.
+        // PUT: Atualizar os dados de um Resource.
+        // POST: Enviar dados ou informações para serem processados por um Resource.
+        // DELETE: Deletar um resource.
+    
+
+    <STATUS DAS RESPOSTAS>
+
+        - 1xx: Informação
+        - 2xx: Sucesso
+            - 200: OK
+            - 201: CREATED
+            - 204: Não tem conteudo PUT POST DELETE
+        - 3xx: Redirection
+        - 4xx: Client ERROR
+            - 400: Bad Request
+            - 404: Not Found!
+        - 5xx: Sever Error
+            - 500: Internal Server Error
+    
+
+
+
+
+
+
+
+
+        
+    <!-- == Comentario em Html--> 
+    <script>
+        // == Comentario em java script
+        var j = 'Java Script'
+        window.prompt()// Recebe um valor
+        var n = window.prompt('Variavel.') // comando var armazena uma Variavel recebida
+        String(n) // Converter para String
+        n.toString() // Converter para String
+        var n = Number(window.prompt('Variavel.')) // converter numero para inteiro ou flutuante
+        var n = Number.parseInt(window.prompt('Variavel.')) // converter numero para inteiro
+        var n = Number.parseFloat(window.prompt('Variavel.')) // converter numero para flutuante
+        alert()//Aviso na tela
+        n.lenght // diz quantos caracteres uma string tem
+        <strong> </strong> // coloca a palavra em negrito
+        <br/> // quebra de linha
+        n.toLocaleString('pt-BR', {style:'currency', currency:'BRL'}) // converter para Real
+        n.toFixed().replace('.', ',') // substitui o ponto pela virgula
+        n.toFixed() // aumenta ou limita o numero de casas decimais
+        n.toUpperCase() // joga todos os caracteres para maiusculos
+        n.toLowerCase() // joga todos os caracteres para minusculos
+        (`Eu estou aprendendo ${j}`)// Recebe uma variavel sem o uso de concatenação. Utilizar crase ao invez de aspas
+        // string + string == concatenação(unir,ligar)
+        // number + number == adição
+        // 'Este numero é n' == interpolação ou seja, não há ligação da variavel n
+        // ctrl + d seleciona todas as variaveis para renomear
+        // && operador lógico 'E' só é verdade quando os dois valores tiverem valor true
+        // ! operador lógico de negação ou seja !true == false e !false == true
+        // || operador lógico 'OU' é verdade quando um dos valores ou os dois forem true, se ambos forem false valor sera falso
+        // < operador lógico relacional de menor
+        // > operador lógico relacional de maior
+        // <= operador lógico relacional de menor ou igual
+        // >= operador lógico relacional de maior ou igual
+        // == operador lógico relacional de igualdade de valor
+        // === operador lógico relacional de igualdade de valor identico
+        // != operador lógico relacional de diferença 
+        // !== operador lógico relacional de diferença identica
+        // ordem de execução de operadres lógicos relacionais 1- !, 2- &&, 3- ||
+        // C ++ == C + C
+        // C -- == C - C
+        /* Ordem de precedencia JS:
+        1- () ** / * % + - 
+        2- < > <= >= == === != !==
+        3- ! && ||
+        */
+        // teste?true:false operador terario que verifica o valor de uma variavel como true ou false
+        // ALT+seta pra cima ou pra baixo move a linha 
+        // class == .
+        // id == #
+        // ctrl + , == settings vscode
+        // length == retorna tamanho do array
+        // push == cria um novo index no fim do array e adiciona o valor
+        // shift == adiciona um valor ao inicio do array 
+        // var.indexOf() busca a posição pelo valor dentro do array
+    </script>
+</body>
+</html>
+
+
