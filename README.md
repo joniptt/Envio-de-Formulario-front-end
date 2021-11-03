@@ -5,5 +5,5 @@ Front-end feito em vue.js e quasar para a API [Envio de Formulario back-end](htt
 
 Lista de tarefas:
 
-- [ ] Fazer uma rota para uma página de logina depois de cadastrado.
+- [ ] Fazer uma rota para uma página de login depois de cadastrado.
 - [ ] Montar a página de interface do usuário.
