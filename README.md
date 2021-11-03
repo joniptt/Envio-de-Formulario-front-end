@@ -10,4 +10,6 @@ Lista de tarefas:
 
 
 
+### Valeu pela atenção de vir aqui ler, tmj.
+
 ![Octocat do meu idolo](https://user-images.githubusercontent.com/90163187/140231343-a589c128-7496-4d10-a9e6-99e1317f6c70.jpg)
